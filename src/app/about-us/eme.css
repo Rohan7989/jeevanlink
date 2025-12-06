@@ -1,0 +1,136 @@
+/* General Container */
+.about-container {
+  background: #ffffff;   /* white background */
+  color: #222;           /* dark text for readability */
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Welcome Section */
+.welcome-section {
+  text-align: center;
+  margin-top: 1.5rem;   /* navbar se thoda niche */
+  margin-bottom: 3rem;
+}
+.headline {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #d62828;
+}
+.tagline {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 1rem auto;
+  max-width: 700px;
+}
+.team-photo {
+  border-radius: 12px;
+  margin-top: 1.5rem;
+}
+
+/* Team Section */
+.team-section {
+  margin-bottom: 3rem;
+}
+.team-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1298e0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+.profile-card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.photo-container {
+  display: flex;
+  justify-content: center;   /* horizontally center */
+  align-items: center;       /* vertically center */
+}
+.profile-img {
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;            /* remove inline gap */
+  margin: 0 auto;            /* center inside container */
+}
+.profile-card h3 {
+  color: #d62828;
+  margin-top: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Social Links */
+.social-links {
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;   /* 👈 spacing between icons */
+}
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.social-icon:hover {
+  transform: scale(1.1);
+}
+.social-icon.insta { background: #e4405f; }     /* Instagram pink */
+.social-icon.telegram { background: #0088cc; } /* Telegram blue */
+.social-icon.linkedin { background: #0a66c2; } /* LinkedIn blue */
+
+/* Story Section */
+.story-section {
+  text-align: center;
+  margin: 3rem 0;
+}
+.story-section h2 {
+  text-align: center;
+  margin-bottom: 1.2rem;
+  color: #1298e0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.story-section p {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+  color: #444;
+}
+.story-photo {
+  border-radius: 10px;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  margin: 3rem 0;
+}
+.cta-button {
+  display: inline-block;
+  background: #1298e0;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.cta-button:hover {
+  background: #0d6efd;
+}

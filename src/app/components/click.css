@@ -1,0 +1,60 @@
+/* 🌐 Common style for all nav links */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 8px 16px; /* Match box button padding */
+  line-height: 1.5;
+}
+
+/* ✨ Hover underline effect */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #e11d48;
+  transform: scaleX(0) translateX(-50%);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #e11d48;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1) translateX(-50%);
+}
+
+/* ✅ Special style for last nav-link (Register button) */
+.nav-link:last-child {
+  background-color: #e11d48;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  position: relative;
+  top: -1px; /* 👆 Slight upward shift for perfect alignment */
+}
+
+.nav-link:last-child::after {
+  content: none; /* Remove underline from button */
+}
+
+.nav-link:last-child:hover {
+  background-color: #be123c;
+  color: white;
+}
+
+/* 🧭 Navbar layout */
+nav {
+  /* display: flex; */
+  align-items: center;
+  gap: 1rem;
+}
