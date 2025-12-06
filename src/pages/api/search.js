@@ -1,5 +1,5 @@
 // pages/api/search.js
-import { connectDB } from "../../lib/mongodb";
+import { connectDB } from "../../../lib/mongodb";
 import mongoose from "mongoose";
 
 const DonorSchema = new mongoose.Schema({

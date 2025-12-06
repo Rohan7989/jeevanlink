@@ -1,6 +1,6 @@
 
 // pages/api/donors.js
-import { connectDB } from "../../lib/mongodb";
+import { connectDB } from "../../../lib/mongodb";
 import mongoose from "mongoose";
 
 const DonorSchema = new mongoose.Schema({

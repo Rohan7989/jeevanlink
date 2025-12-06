@@ -1,4 +1,4 @@
-import { connectDB } from "../../lib/mongodb";
+import { connectDB } from "../../../lib/mongodb";
 import mongoose from "mongoose";
 
 // Schema define karo
