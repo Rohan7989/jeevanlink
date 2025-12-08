@@ -120,10 +120,10 @@ export default function Header() {
         <nav className="hidden md:flex gap-4 text-sm text-slate-700">
           <a href="/donors" className="relative inline-block text-black after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[2px] after:w-full after:bg-red-600
               after:scale-x-0 after:origin-center after:transition-transform after:duration-300  hover:text-red-600 hover:after:scale-x-100 after:-translate-x-1/2">Find Donors</a>
-          <a href="/emergency" className="relative inline-block text-black after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[2px] after:w-full after:bg-red-600
-              after:scale-x-0 after:origin-center after:transition-transform after:duration-300  hover:text-red-600 hover:after:scale-x-100 after:-translate-x-1/2">Emergency</a>
-          <a href="/testing" className="relative inline-block text-black after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[2px] after:w-full after:bg-red-600
-              after:scale-x-0 after:origin-center after:transition-transform after:duration-300  hover:text-red-600 hover:after:scale-x-100 after:-translate-x-1/2">Testing</a>
+          {/* <a href="/emergency" className="relative inline-block text-black after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[2px] after:w-full after:bg-red-600
+              after:scale-x-0 after:origin-center after:transition-transform after:duration-300  hover:text-red-600 hover:after:scale-x-100 after:-translate-x-1/2">Emergency</a> */}
+          {/* <a href="/testing" className="relative inline-block text-black after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[2px] after:w-full after:bg-red-600
+              after:scale-x-0 after:origin-center after:transition-transform after:duration-300  hover:text-red-600 hover:after:scale-x-100 after:-translate-x-1/2">Testing</a> */}
           <Link href="/about-us" className="relative inline-block text-black after:content-[''] after:absolute after:left-1/2 after:bottom-0  after:h-[2px] after:w-full after:bg-red-600
               after:scale-x-0 after:origin-center after:transition-transform after:duration-300  hover:text-red-600 hover:after:scale-x-100 after:-translate-x-1/2">About Us</Link>
           <a href="/register" className="nav-link">Register</a>
@@ -152,8 +152,8 @@ export default function Header() {
         </button>
         <a href="/" onClick={() => setIsOpen(false)} className="hover:text-red-600">Home</a>
         <a href="/donors" onClick={() => setIsOpen(false)} className="hover:text-red-600">Find Donors</a>
-        <a href="/emergency" onClick={() => setIsOpen(false)} className="hover:text-red-600">Emergency</a>
-        <a href="/testing" onClick={() => setIsOpen(false)} className="hover:text-red-600">Testing</a>
+        {/* <a href="/emergency" onClick={() => setIsOpen(false)} className="hover:text-red-600">Emergency</a>
+        <a href="/testing" onClick={() => setIsOpen(false)} className="hover:text-red-600">Testing</a> */}
         <Link href="/about-us" onClick={() => setIsOpen(false)} className="hover:text-red-600">About Us</Link>
         <a href="/register" onClick={() => setIsOpen(false)} className="bg-rose-600 text-white px-4 py-2 rounded-md hover:bg-rose-700">
           Register
